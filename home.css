@@ -1,0 +1,105 @@
+* {
+    margin: 0%;
+    background-color: rgb(34, 34, 34);
+}
+
+
+.about_me_p {
+    color: white;
+}
+
+.head{
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+.lable_pro {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.project1 {
+    
+    box-shadow: 11px 10px 300px rgb(30, 30, 30);
+    font-family: Helvetica;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50%;
+    background-color: white;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.project_edit, .project_date {
+    background-color: white;
+    
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.project_date {
+  float: right;
+}
+#copyrights {
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.project_save {
+    
+    margin-left: 5px;
+    margin-right: 130px;
+    border: solid green;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+}
+.project_save1 {
+    margin-right: 100px;
+    border: solid red;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+}
+.project_save2 {
+    margin-right: 110px;
+    border: solid rgb(56, 99, 255);
+    border-radius: 15px;
+    background-color: rgb(56, 99, 255);
+    color: white;
+}
+.project-des {
+    background-color: white;
+}
+
+.home_link {
+    margin-right: 1%;
+}
+a {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(255, 255, 255);
+
+}
+.links {
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+
+
+}
+.github {
+    margin-right: 15px;
+}
+.about_me_p {
+    font-family: Helvetica;
+    font-size: 19px;
+}
+
