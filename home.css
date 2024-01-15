@@ -1,27 +1,50 @@
 * {
     margin: 0%;
-    background-color: rgb(34, 34, 34);
+    
 }
-
+body {
+    background-color: white;
+    color: black;
+}
+  
+.dark-mode {
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
 
 .about_me_p {
     color: white;
 }
 
 .head{
+    
     position: -webkit-sticky;
     position: sticky;
     display: flex;
     justify-content: center;
 }
+
+.Switch_dark_Light {
+    position: absolute;
+    right: 0;
+    padding: 6px;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
 .lable_pro {
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
 }
+.lable_pro_dark {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 .project1 {
-    
-    box-shadow: 11px 10px 300px rgb(30, 30, 30);
+    box-shadow: 11px 10px 30px rgb(30, 30, 30);
     font-family: Helvetica;
     margin: 0 auto;
     margin-top: 10px;
@@ -32,24 +55,48 @@
     width: 250px;
     height: 250px;
 }
+.project1_dark {
+    box-shadow: 11px 10px 30px rgb(30, 30, 30);
+    font-family: Helvetica;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50%;
+    background-color: rgb(30, 30, 30);
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+}
 
 .project_edit, .project_date {
     background-color: white;
-    
     margin-top: 10px;
+    
+}
+.project_edit_dark {
     display: inline-block;
+    margin-top: 10px;
+    color: white;
 }
 
 .project_date {
-  float: right;
+  float: left;
+}
+.project_date_dark {
+    float: left;
+    color: white;
+    
 }
 #copyrights {
-    color: white;
+   
     margin-left: 10px;
     margin-bottom: 10px;
 }
+.project_status {
+    display: inline;
+}
 .project_save {
-    
+    margin-top: 11px;
     margin-left: 5px;
     margin-right: 130px;
     border: solid green;
@@ -58,6 +105,8 @@
     color: white;
 }
 .project_save1 {
+    margin-top: 11px;
+    margin-left: 5px;
     margin-right: 100px;
     border: solid red;
     border-radius: 15px;
@@ -65,28 +114,31 @@
     color: white;
 }
 .project_save2 {
-    margin-right: 110px;
+    margin-top: 11px;
+    margin-right: 100px;
     border: solid rgb(56, 99, 255);
     border-radius: 15px;
     background-color: rgb(56, 99, 255);
     color: white;
+    margin-left: 5px;
 }
 .project-des {
     background-color: white;
+}
+.project-des_dark {
+    color: white;
 }
 
 .home_link {
     margin-right: 1%;
 }
+
 a {
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: black;
     text-decoration: none;
 }
-a:visited{
-    color: rgb(255, 255, 255);
 
-}
 .links {
     margin-top: 40px;
     
@@ -99,6 +151,7 @@ a:visited{
     margin-right: 15px;
 }
 .about_me_p {
+    color: black;
     font-family: Helvetica;
     font-size: 19px;
 }

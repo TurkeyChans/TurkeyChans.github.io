@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <div class="head">
-        <button class="home_link">
+    <nav class="head">
+        <button class="home_link" id="homeid">
             <a href="index.html">Home</a>
         </button>
         <button>
             <a href="About.html" class="about_me_link">About Me</a>
         </button>
-    </div>
+        <button class="Switch_dark_Light" id="switcher" onclick="dark_light_about_me()" type="button">Dark</button>
+    </nav>
     
-    <div class="about_me_p">
+    <div class="about_me_p" id="about_me_p_id">
         <br>
         <p>- Quick Brief Of Who I Am </p>
         <br>
@@ -41,10 +42,10 @@
 
     <footer class="links">
         <a href="https://github.com/TurkeyChans" class="github">
-            <img src="lightgithub.png" height="50">
+            <img src="darkgithub.png" height="50" id="githubs">
         </a>
         <a href="https://discord.com/invite/jjXCnu8W" class="discord">
-            <img src="lightdiscord.png" height="50">
+            <img src="darkdiscord.png" height="50" id="discords">
         </a>
     </footer>
     <p id="copyrights"></p>

@@ -6,43 +6,51 @@
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
 </head>
-<body class="homepage">
-    
-    <div class="head">
-        <button class="home_link">
+<body>
+    <nav class="head">
+        <button class="home_link" id="homeid">
             <a href="index.html">Home</a>
         </button>
         <button>
             <a href="About.html" class="about_me_link">About Me</a>
         </button>
-    </div>
+        <button class="Switch_dark_Light" id="switcher" onclick="dark_light()" type="button">Dark</button>
+    </nav>
     
-    
-    <h1 class="lable_pro">Projects</h1>
-    <div class="project1">
-        <h2 class="project_edit">Updating Web</h2>
-        <h3 class="project_date">1/14/2024</h3>
+    <h1 class="lable_pro" id="lable_proo"> My Projects</h1>
+    <div class="project1" id="projects3">
+        <h2 class="project_edit" id="project_edit3">Research</h2>
+        <h3 class="project_date" id="project_date3">Last Updated 1/15/2024</h3>
         <br>
         <br>
         <h2 class="project_save2">In Progress</h2>
         <br>
-        <h2 class="project-des">Going to add a light and dark mode using JavaScript.</h2>
+        <h2 class="project-des" id="project_des3">I'll be researching selenium to automate my daily basis.</h2>
     </div>
-    <div class="project1">
-        <h2 class="project_edit">1st Website</h2>
-        <h3 class="project_date">1/14/2024</h3>
+    <div class="project1" id="projects1">
+        <h2 class="project_edit" id="project_edit1">Update Web</h2>
+        <h3 class="project_date" id="project_date1">Last Updated 1/14/2024</h3>
         <br>
         <br>
         <h2 class="project_save">Complete</h2>
         <br>
-        <h2 class="project-des">This is my first ever website that I have publish.</h2>
+        <h2 class="project-des" id="project_des1">Going to add a light and dark mode using JavaScript.</h2>
+    </div>
+    <div class="project1" id="projects2">
+        <h2 class="project_edit" id="project_edit2">1st Website</h2>
+        <h3 class="project_date" id="project_date2">Last Updated 1/14/2024</h3>
+        <br>
+        <br>
+        <h2 class="project_save">Complete</h2>
+        <br>
+        <h2 class="project-des" id="project_des2">This is my first ever website that I have publish.</h2>
     </div>
     <footer class="links">
         <a href="https://github.com/TurkeyChans" class="github">
-            <img src="lightgithub.png" height="50">
+            <img src="darkgithub.png" height="50" id="githubs">
         </a>
         <a href="https://discord.com/invite/jjXCnu8W" class="discord">
-            <img src="lightdiscord.png" height="50">
+            <img src="darkdiscord.png" height="50" id="discords">
         </a>
     </footer>
     
