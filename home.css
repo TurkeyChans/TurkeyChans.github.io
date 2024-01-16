@@ -13,17 +13,17 @@ body {
 }
 
 .about_me_p {
+    margin: 1%;
     color: white;
 }
 
 .head{
-    
+    margin-top: 1%;
     position: -webkit-sticky;
     position: sticky;
     display: flex;
     justify-content: center;
 }
-
 .Switch_dark_Light {
     position: absolute;
     right: 0;
@@ -67,33 +67,26 @@ body {
     width: 250px;
     height: 250px;
 }
-
 .project_edit, .project_date {
-    background-color: white;
     margin-top: 10px;
-    
+    background-color: white;
 }
 .project_edit_dark {
-    display: inline-block;
     margin-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 12px ;
     color: white;
 }
-
 .project_date {
   float: left;
 }
 .project_date_dark {
     float: left;
     color: white;
-    
 }
 #copyrights {
-   
     margin-left: 10px;
     margin-bottom: 10px;
-}
-.project_status {
-    display: inline;
 }
 .project_save {
     margin-top: 11px;
@@ -132,7 +125,10 @@ body {
 .home_link {
     margin-right: 1%;
 }
-
+.email_link {
+    font-size: 25px;
+    margin-right: 1%;
+}
 a {
     font-size: 25px;
     color: black;
@@ -151,6 +147,7 @@ a {
     margin-right: 15px;
 }
 .about_me_p {
+    margin: 1%;
     color: black;
     font-family: Helvetica;
     font-size: 19px;

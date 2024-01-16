@@ -11,6 +11,7 @@ let light_dark_mode = false;
 function both_dark_and_light(light_dark_mode) {
     let imageElement = document.getElementById('discords');
     let imageElement1 = document.getElementById('githubs');
+    let buttondis = document.getElementById('email_linkid');
     if(light_dark_mode) {
         let aElements = document.querySelectorAll('a');
         for (let i = 0; i < aElements.length; i++) {
@@ -26,11 +27,13 @@ function both_dark_and_light(light_dark_mode) {
         switing.innerHTML = 'Dark';
         switing.style.color = 'black';
         copys.style.color = 'black';
-        document.getElementById('switcher').innerHTML = 'Light';
+        buttondis.style.color = 'black';
+        document.getElementById('switcher').innerHTML = 'Light Mode';
         document.body.style.backgroundColor = 'white';
         
-        imageElement.src = 'darkdiscord.png';
-        imageElement1.src = 'darkgithub.png';
+        
+        imageElement.src = 'pic/darkdiscord.png';
+        imageElement1.src = 'pic/darkgithub.png';
     }
     else {
         let aElements = document.querySelectorAll('a');
@@ -43,12 +46,13 @@ function both_dark_and_light(light_dark_mode) {
             buttonElements[i].style.backgroundColor = 'black';
         }
         const switing = document.getElementById('switcher');
-        switing.innerHTML = 'Dark';
+        switing.innerHTML = 'Dark Mode';
         switing.style.color = 'white';
         copys.style.color = 'white';
+        buttondis.style.color = 'white';
         document.body.style.backgroundColor = "rgb(37, 37, 37)";
-        imageElement.src = 'lightdiscord.png';
-        imageElement1.src = 'lightgithub.png';
+        imageElement.src = 'pic/lightdiscord.png';
+        imageElement1.src = 'pic/lightgithub.png';
     }
 }
 function dark_light_about_me() {
@@ -76,7 +80,7 @@ function dark_light() {
         for(let j = 1; j <= findings+1; ++j) {
             const element3 = document.getElementById(projects);
             element3.classList.replace("project1_dark", "project1");
-            projects = 'projects' + j
+            projects = 'projects' + j;
         }
 
         const findings2 = document.getElementsByClassName('project1').length;
