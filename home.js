@@ -8,9 +8,12 @@ copysss.appendChild(copyss);
 copys.appendChild(copysss);
 
 let light_dark_mode = false;
+
 function both_dark_and_light(light_dark_mode) {
-    let imageElement = document.getElementById('discords');
-    let imageElement1 = document.getElementById('githubs');
+    const imageElement = document.getElementById('discords');
+    const imageElement1 = document.getElementById('githubs');
+    const imageElement2 = document.getElementById('sun_moon');
+    const switing = document.getElementById('switcher');
     let buttondis = document.getElementById('email_linkid');
     if(light_dark_mode) {
         let aElements = document.querySelectorAll('a');
@@ -23,17 +26,12 @@ function both_dark_and_light(light_dark_mode) {
             buttonElements[i].style.backgroundColor = 'white';
         }
 
-        const switing = document.getElementById('switcher');
-        switing.innerHTML = 'Dark';
-        switing.style.color = 'black';
         copys.style.color = 'black';
         buttondis.style.color = 'black';
-        document.getElementById('switcher').innerHTML = 'Light Mode';
         document.body.style.backgroundColor = 'white';
-        
-        
         imageElement.src = 'pic/darkdiscord.png';
         imageElement1.src = 'pic/darkgithub.png';
+        imageElement2.src = 'pic/light-bulb-removebg-preview.png';
     }
     else {
         let aElements = document.querySelectorAll('a');
@@ -45,14 +43,31 @@ function both_dark_and_light(light_dark_mode) {
         for (let i = 0; i < buttonElements.length; i++) {
             buttonElements[i].style.backgroundColor = 'black';
         }
-        const switing = document.getElementById('switcher');
-        switing.innerHTML = 'Dark Mode';
-        switing.style.color = 'white';
+        
+        switing.style.backgroundColor = 'gray';
         copys.style.color = 'white';
         buttondis.style.color = 'white';
         document.body.style.backgroundColor = "rgb(37, 37, 37)";
         imageElement.src = 'pic/lightdiscord.png';
         imageElement1.src = 'pic/lightgithub.png';
+        imageElement2.src = 'pic/light-bulb__1_-removebg-preview.png';
+    }
+}
+function dark_light_discord() {
+    const dark_discord_p = document.getElementById("discord_p");
+    const dark_discord_p2 = document.getElementById("discord_p2");
+
+    if(light_dark_mode) {
+        dark_discord_p.style.color = 'black';
+        dark_discord_p2.style.color = 'black';
+        both_dark_and_light(true);
+        light_dark_mode = false;
+    }
+    else {
+        dark_discord_p.style.color = 'white';
+        dark_discord_p2.style.color = 'white';
+        both_dark_and_light(false);
+        light_dark_mode = true;
     }
 }
 function dark_light_about_me() {
