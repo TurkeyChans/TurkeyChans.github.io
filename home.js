@@ -1,5 +1,9 @@
 var copyDate = new Date();
 year = copyDate.getFullYear();
+month = copyDate.getMonth();
+day = copyDate.getDate();
+var before_B = (year-1) - 2003;
+var after_B = year - 2003;
 
 const copys = document.getElementById('copyrights');
 const copysss = document.createElement('p');
@@ -7,8 +11,21 @@ const copyss = document.createTextNode('Copyright ' + year);
 copysss.appendChild(copyss);
 copys.appendChild(copysss);
 
-let light_dark_mode = false;
+const age = document.getElementById('about_me_quick_brief');
+const ages = document.createElement('p');
+if(month >= 10 && day >= 7) {
+    const agesss = document.createTextNode("My name is Louis, and I'd want to introduce myself. I'm " + after_B + " years old and from the Dominican Republic. I speak both English, Spanish, and ASL (American Sign Language). I'm a junior student at CUNY Lehman College. I'd want to work at Microsoft as a software developer. I graduated from a private high school, so this public college will be a new environment for me.    ");
+    ages.appendChild(agesss);
+    age.appendChild(ages);
+}
+else {
+    const agess = document.createTextNode("My name is Louis, and I'd want to introduce myself. I'm " + before_B + " years old and from the Dominican Republic. I speak both English, Spanish, and ASL (American Sign Language). I'm a junior student at CUNY Lehman College. I'd want to work at Microsoft as a software developer. I graduated from a private high school, so this public college will be a new environment for me.    ");
+    ages.appendChild(agess);
+    age.appendChild(ages);
+}
 
+
+let light_dark_mode = false;
 function both_dark_and_light(light_dark_mode) {
     const imageElement = document.getElementById('discords');
     const imageElement1 = document.getElementById('githubs');
