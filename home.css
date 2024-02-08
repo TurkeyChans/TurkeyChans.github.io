@@ -6,12 +6,10 @@ body {
     background-color: white;
     color: black;
 }
-  
 .dark-mode {
     background-color: rgb(35, 35, 35);
     color: white;
 }
-
 .about_me_p {
     margin: 1%;
     color: white;
@@ -102,7 +100,7 @@ body {
 .project_save1 {
     margin-top: 11px;
     margin-left: 5px;
-    margin-right: 100px;
+    margin-right: 150px;
     border: solid red;
     border-radius: 15px;
     background-color: red;
@@ -123,7 +121,6 @@ body {
 .project-des_dark {
     color: white;
 }
-
 .home_link {
     margin-right: 1%;
 }
