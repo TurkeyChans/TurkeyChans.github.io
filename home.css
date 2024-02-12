@@ -2,10 +2,20 @@
     margin: 0%;
     
 }
+
 body {
     background-color: white;
     color: black;
 }
+/* working 
+.home_link {
+    background: white;
+    border-radius: 10px;
+}
+.home_link:hover {
+    background-color: rgb(160, 160, 160);
+}
+*/
 .dark-mode {
     background-color: rgb(35, 35, 35);
     color: white;
@@ -98,6 +108,7 @@ body {
     color: white;
 }
 .project_save1 {
+    padding-left: 2px;
     margin-top: 11px;
     margin-left: 5px;
     margin-right: 150px;
@@ -107,6 +118,7 @@ body {
     color: white;
 }
 .project_save2 {
+    padding-left: 2px;
     margin-top: 11px;
     margin-right: 100px;
     border: solid rgb(56, 99, 255);
@@ -150,3 +162,12 @@ a {
 .div_discord_h1 {
     margin-top: 1%;
 }
+
+/*.table-tic-toe {
+    margin-left: 40%;
+    margin-top: 25%;
+}
+.mt {
+    width: 50px;
+    height: 50px;
+}*/
