@@ -187,3 +187,15 @@ function dark_light() {
         light_dark_mode = true;
     }
 }
+//working in progress
+function handleResize() {
+    var pageWidth = document.documentElement.clientWidth;
+    if (pageWidth < 600) { 
+        
+        console.log("Page is too small!");
+    } else {
+        console.log("Page is large enough.");
+    }
+}
+window.addEventListener('resize', handleResize);
+handleResize();
